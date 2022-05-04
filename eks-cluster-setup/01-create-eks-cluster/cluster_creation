@@ -1,0 +1,5 @@
+#This will create EKS cluster with Master Plane and without Worker Nodes.
+eksctl create cluster --name=eks-demo --region=us-east-1 --zones=us-east-1a,us-east-1b --without-nodegroup 
+
+#To create the Worker Nodes for the eks-demo cluster in private network
+eksctl create nodegroup -cluster=eks-demo --region, --nodetype=t2.micro --node-private-networking
