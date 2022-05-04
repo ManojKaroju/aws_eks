@@ -1,0 +1,13 @@
+1. Create IAM User and attach Admin Full access and Dwonload Accesskey and secret key using AWS Console
+
+#Install the AWS CLI for Windows
+2. https://awscli.amazonaws.com/AWSCLIV2.msi
+
+#Verify the installation
+3. aws --version
+
+#Configure the IAM user on your windows desktop
+4. PS C:\WINDOWS\system32> aws configure
+AWS Access Key ID [****************UCNW]: <Acess Key>
+AWS Secret Access Key [****************2udO]: <Secret Key>
+Default region name [us-east-1]: us-east-1
