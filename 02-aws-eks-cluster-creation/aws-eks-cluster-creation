@@ -4,7 +4,7 @@
 # Verify the Installation
 2. eksctl version
 
-#This will create EKS cluster with Master Plane and without Worker Nodes.
+#This will create EKS cluster with Master Plane and without Worker Nodes. Behind the scene it submits the CFT
 3. eksctl create cluster --name=eks-demo --region=us-east-1 --zones=us-east-1a,us-east-1b --without-nodegroup 
 
 #To create the Worker Nodes for the eks-demo cluster in private network
