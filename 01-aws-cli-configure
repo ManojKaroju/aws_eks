@@ -1,4 +1,4 @@
-1. Create IAM User and attach AdministratorAccess policy and Dwonload Accesskey and secret key using AWS Console
+1. Create IAM User with AdministratorAccess policy and Download Accesskey and secret key using AWS Console
 
 #Install the AWS CLI for Windows
 2. https://awscli.amazonaws.com/AWSCLIV2.msi
