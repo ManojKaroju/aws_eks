@@ -12,3 +12,10 @@
 
 #Assosciate IAM-OIDC-Provider: The K8's service account and IAM role assosciatred to SA need to have a way to communicate to AWS IAM service to validate the permission and do that it's uses the IAM-OIDC-Provider to communicate. 
 5. eksctl utils associate-iam-oidc-provider --region us-east-1 --cluster eks-demo --approve
+
+Using Kubernetes Manifest files
+# Creating cluster using config file
+1. eksctl create cluster -f eksctl-create-cluster.yaml
+
+# Creating NodeGroup using config file
+2. eksctl create nodegroup -f eksctl-create-ng.yaml
