@@ -10,5 +10,10 @@
 #To create the Worker Nodes for the eks-demo cluster in private network
 4. eksctl create nodegroup -cluster=eks-demo --region, --nodetype=t2.micro --node-private-networking
 
-#Assosciate IAM-OIDC-Provider Your cluster has an OpenID Connect issuer URL associated with it. To use IAM roles for service accounts, an IAM OIDC provider must exist for your cluster
+#Assosciate IAM-OIDC-Provider 
+# The K8's service account and IAM role assosciatred to SA need to have a way to communicate to AWS IAM service to validate the permission and do that it's uses the 
+IAM-OIDC-Provider to communicate. 
+
+
+Your cluster has an OpenID Connect issuer URL associated with it. To use IAM roles for service accounts, an IAM OIDC provider must exist for your cluster
 5. eksctl utils associate-iam-oidc-provider --region us-east-1 --cluster eks-demo --approve
