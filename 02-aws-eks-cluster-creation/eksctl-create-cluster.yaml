@@ -7,5 +7,5 @@ metadata:
 
 nodeGroups:
   - name: ng-default
-    instanceType: t2.micro
-    desiredCapacity: 2
+      instanceType: t2.micro
+      desiredCapacity: 2
